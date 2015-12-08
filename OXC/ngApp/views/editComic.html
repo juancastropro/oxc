@@ -1,0 +1,22 @@
+﻿<br />
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 editcomicbody">
+            <form ng-submit="controller.save()">
+                <div>
+                    <label>Title:</label>
+                    <input ng-model="controller.comicToEdit.title" />
+                </div>
+                <div>
+                    <label>Writer:</label>
+                    <input ng-model="controller.comicToEdit.writer" />
+                </div>
+                <div>
+                    <label>Artist:</label>
+                    <input ng-model="controller.comicToEdit.artist" />
+                </div>
+                <input type="submit" value="Save" />
+            </form>
+        </div>
+    </div>
+</div>

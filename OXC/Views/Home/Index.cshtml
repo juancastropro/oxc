@@ -1,0 +1,65 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml" ng-app="MyApp">
+<head>
+    <title>OXC Comics</title>
+    <base href="/" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+</head>
+<body ng-controller="AccountController as account">
+
+    @*<div>
+        <a href="/">OXC Comics</a> /
+        <a href="/creators">Creators</a> /
+        <a href="/login" ng-show="!account.isLoggedIn()">login</a>
+        <a href="#" ng-click="account.logout()" ng-show="account.isLoggedIn()">logout</a>
+    </div>*@
+
+    @*Header*@
+    <div class="container">
+        <div class="navrow1">
+            <div class="col-md-12 navititle"><a href="/">OXC COMICS</a></div>
+        </div>
+        <div class="navrow2">
+            <div class="col-md-3 navicreators"><a href="/creators">CREATORS</a></div>
+            <div class="col-md-3 navicomics"><a href="/comics">COMICS</a></div>
+            <div class="col-md-3 naviregister"><a href="/register">REGISTER</a></div>
+            <div class="col-md-3 navilogin">
+                <a href="/login" ng-show="!account.isLoggedIn()">LOGIN</a>
+                <a href="#" ng-click="account.logout()" ng-show="account.isLoggedIn()">LOGOUT</a>
+            </div>
+        </div>
+    </div>
+
+    <ng-view></ng-view>
+
+    @*Social*@
+    <br />
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 bodysocial">SOCIAL</div>
+        </div>
+        <div class="footerrow">
+            <div class="col-md-4 logo"><img src="~/Images/OXC Logo3.png" alt="Mountain View" style="width:300px;height:300px;" /></div>
+            <div class="col-md-2 footer"><a href="/">FACEBOOK</a></div>
+            <div class="col-md-2 footer"><a href="/">INSTAGRAM</a></div>
+            <div class="col-md-2 footer"><a href="/">TUMBLR</a></div>
+            <div class="col-md-2 footer"><a href="/">TWITTER</a></div>
+        </div>
+    </div>
+
+    <script src="~/Scripts/jquery-2.1.4.min.js"></script>
+    <script src="~/Scripts/bootstrap.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/angular.min.js"></script>
+    <script src="~/Scripts/angular-route.min.js"></script>
+    <script src="~/Scripts/angular-resource.min.js"></script>
+    <script src="~/ngApp/app.js"></script>
+    <script src="~/ngApp/controllers/controllers.js"></script>
+    <script src="~/ngApp/services/services.js"></script>
+    <script src="~/ngApp/controllers/accountController.js"></script>
+    <script src="~/ngApp/services/accountService.js"></script>
+    <link href="~/style.css" rel="stylesheet" />
+</body>
+</html>

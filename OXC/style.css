@@ -1,0 +1,180 @@
+﻿@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
+@import url(https://fonts.googleapis.com/css?family=Dosis);
+
+
+body {
+    background-color: lightgray;
+}
+
+/*div {
+    border: 1px solid black;
+}*/
+
+.spacer {
+    height: 50px;
+    background-color: white;
+}
+
+.navrow1 {
+    font-family: 'Dosis', sans-serif;
+    height: 200px;
+    background-color: darkgrey;
+    color: white;
+    /*Vertical Centering*/
+    line-height: 188px;
+    /*Horizontral Centering*/
+    text-align: center;
+    /*Blocks*/
+    position: relative;
+    width: 100%;
+    /*Text Size*/
+    font-size: 200px;
+    /*background Image*/
+    /*background-image: url('Images/bg.jpg');*/
+}
+
+.navititle a {
+    color: white;
+}
+
+.navrow2 {
+    font-family: 'Roboto Condensed', sans-serif;
+    height: 50px;
+    background-color: darkslategray;
+    color: white;
+    /*Vertical Centering (must match height above)*/
+    line-height: 50px;
+    /*Horizontral Centering*/
+    text-align: center;
+    /*Text Size*/
+    font-size: 30px;
+}
+
+/*.navicreators {
+    background-image: url('Images/bg.jpg');
+}*/
+
+.navicreators a {
+    color: white;
+}
+
+/*.navicomics {
+    background-image: url('Images/bg.jpg');
+}*/
+
+.navicomics a {
+    color: white;
+}
+
+/*.naviregister {
+    background-image: url('Images/bg.jpg');
+}*/
+
+.naviregister a {
+    color: white;
+}
+
+/*.navilogin {
+    background-image: url('Images/bg.jpg');
+}*/
+
+.navilogin a {
+    color: white;
+}
+
+.footerrow a {
+    color: black;
+}
+
+.bodypreview {
+    font-family: 'Roboto Condensed', sans-serif;
+    height: 50px;
+    background-color: black;
+    color: white;
+    /*Vertical Centering (must match height above)*/
+    line-height: 50px;
+    /*Blocks*/
+    position: relative;
+    width: 100%;
+    /*Text Size*/
+    font-size: 30px;
+}
+
+.bodysocial {
+    font-family: 'Roboto Condensed', sans-serif;
+    height: 50px;
+    /*Vertical Centering (must match height above)*/
+    line-height: 50px;
+    /*Blocks*/
+    position: relative;
+    width: 100%;
+    /*Text Size*/
+    font-size: 30px;
+}
+
+.logo {
+    font-family: 'Roboto Condensed', sans-serif;
+    /*Vertical Centering (must match height above)*/
+    line-height: 200px;
+    /*Text Size*/
+    font-size: 20px;
+}
+
+.footer {
+    font-family: 'Roboto Condensed', sans-serif;
+    /*Vertical Centering (must match height above)*/
+    line-height: 200px;
+    /*Text Size*/
+    font-size: 20px;
+}
+
+.creatorspic {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+}
+
+.creatorsbio {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+    height: 80px;
+}
+
+.comicsbody {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+}
+
+.addcomicbody {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+}
+
+.editcomicbody {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+}
+
+.deletecomicbody {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+}
+
+.newsbody {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+}
+
+.registerbody {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+}
+
+.loginbody {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+}
+
+.slideshow {
+    height: 680px;
+    background-color: white;
+}

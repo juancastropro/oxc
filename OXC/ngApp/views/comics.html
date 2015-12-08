@@ -1,0 +1,16 @@
+﻿<br />
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 comicsbody">
+            <font size="6">OXC Presents:</font>
+            <div ng-repeat="comic in controller.comics">
+                <font size="5"><i>{{comic.title}}</i></font><br />
+                Writer: {{comic.writer}}<br />
+                Artist: {{comic.artist}}<br />
+                <a href="/edit/{{comic.id}}">Edit</a> |
+                <a href="/delete/{{comic.id}}">Delete</a>
+            </div>
+            <a href="/addComic">Add New Comic</a>
+        </div>
+    </div>
+</div>
