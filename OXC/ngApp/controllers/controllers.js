@@ -101,3 +101,4 @@ var MyApp;
         Controllers.DeleteComicController = DeleteComicController;
     })(Controllers = MyApp.Controllers || (MyApp.Controllers = {}));
 })(MyApp || (MyApp = {}));
+//# sourceMappingURL=controllers.js.map
