@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Security.Claims;
 using System.Web.Http;
 
 namespace OXC.API
@@ -23,8 +24,14 @@ namespace OXC.API
             return comics;
         }
 
+        [Authorize]
         public IHttpActionResult Post(Comic comic)
         {
+            var user = this.User as ClaimsPrincipal;
+            if (!user.HasClaim("CanAddComics", "true"))
+            {
+                return Unauthorized();
+            }
             if (!ModelState.IsValid)
             {
                 return BadRequest(this.ModelState);

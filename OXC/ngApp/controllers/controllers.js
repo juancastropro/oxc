@@ -11,6 +11,21 @@ var MyApp;
             return HomeController;
         })();
         Controllers.HomeController = HomeController;
+        var CarouselController = (function () {
+            function CarouselController() {
+                this.slides = [
+                    {
+                        image: '~/Content/Images/placeholder.png',
+                        text: 'Slide 1'
+                    },
+                    {
+                        image: '~/Content/Images/placeholder.png',
+                        text: 'Slide 2'
+                    }];
+            }
+            return CarouselController;
+        })();
+        Controllers.CarouselController = CarouselController;
         var AboutController = (function () {
             function AboutController() {
             }
@@ -86,4 +101,3 @@ var MyApp;
         Controllers.DeleteComicController = DeleteComicController;
     })(Controllers = MyApp.Controllers || (MyApp.Controllers = {}));
 })(MyApp || (MyApp = {}));
-//# sourceMappingURL=controllers.js.map

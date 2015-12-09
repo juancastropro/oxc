@@ -2,8 +2,16 @@
 @import url(https://fonts.googleapis.com/css?family=Dosis);
 
 
-body {
+/*body {
     background-color: lightgray;
+}*/
+
+body {
+  background-image:
+  url(http://theartmad.com/wp-content/uploads/Grey-Background-5.jpg);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
 /*div {
@@ -30,7 +38,8 @@ body {
     /*Text Size*/
     font-size: 200px;
     /*background Image*/
-    /*background-image: url('Images/bg.jpg');*/
+    /*background-image: url('http://theartmad.com/wp-content/uploads/Grey-Background-Tumblr-03.jpg');
+    background-position: center;*/
 }
 
 .navititle a {
@@ -82,10 +91,6 @@ body {
     color: white;
 }
 
-.footerrow a {
-    color: black;
-}
-
 .bodypreview {
     font-family: 'Roboto Condensed', sans-serif;
     height: 50px;
@@ -103,6 +108,8 @@ body {
 .bodysocial {
     font-family: 'Roboto Condensed', sans-serif;
     height: 50px;
+    background-color: white;
+    color: darkgray;
     /*Vertical Centering (must match height above)*/
     line-height: 50px;
     /*Blocks*/
@@ -113,19 +120,18 @@ body {
 }
 
 .logo {
-    font-family: 'Roboto Condensed', sans-serif;
-    /*Vertical Centering (must match height above)*/
-    line-height: 200px;
-    /*Text Size*/
-    font-size: 20px;
+    height: 300px;
+    line-height: 300px;
 }
 
 .footer {
     font-family: 'Roboto Condensed', sans-serif;
+    color: darkgray;
     /*Vertical Centering (must match height above)*/
-    line-height: 200px;
+    /*line-height: 200px;*/
     /*Text Size*/
     font-size: 20px;
+    text-align: center;
 }
 
 .creatorspic {
@@ -170,6 +176,11 @@ body {
 }
 
 .loginbody {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+}
+
+.midpicdes {
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 20px;
 }

@@ -10,6 +10,22 @@
             ) {
             this.comics = this.comicService.listComics();
         }
+
+    }
+
+    export class CarouselController {
+        public slides;
+        constructor() {
+            this.slides = [
+                {
+                    image: '~/Content/Images/placeholder.png',
+                    text: 'Slide 1'
+                },
+                {
+                    image: '~/Content/Images/placeholder.png',
+                    text: 'Slide 2'
+                }];
+        }
     }
 
     export class AboutController {
