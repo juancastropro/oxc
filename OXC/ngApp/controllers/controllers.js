@@ -7,25 +7,19 @@ var MyApp;
                 this.comicService = comicService;
                 this.$location = $location;
                 this.comics = this.comicService.listComics();
+                this.slides = [
+                    {
+                        image: '/Images/placeholder.png',
+                        text: 'Slide 1'
+                    },
+                    {
+                        image: '/Images/placeholder.png',
+                        text: 'Slide 2'
+                    }];
             }
             return HomeController;
         })();
         Controllers.HomeController = HomeController;
-        var CarouselController = (function () {
-            function CarouselController() {
-                this.slides = [
-                    {
-                        image: '~/Content/Images/placeholder.png',
-                        text: 'Slide 1'
-                    },
-                    {
-                        image: '~/Content/Images/placeholder.png',
-                        text: 'Slide 2'
-                    }];
-            }
-            return CarouselController;
-        })();
-        Controllers.CarouselController = CarouselController;
         var AboutController = (function () {
             function AboutController() {
             }

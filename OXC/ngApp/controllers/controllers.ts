@@ -2,31 +2,25 @@
 
     export class HomeController {
         public comics;
-
+        public slides;
         constructor
             (
             private comicService: MyApp.Services.ComicService,
             private $location: angular.ILocationService
             ) {
             this.comics = this.comicService.listComics();
-        }
-
-    }
-
-    export class CarouselController {
-        public slides;
-        constructor() {
             this.slides = [
                 {
-                    image: '~/Content/Images/placeholder.png',
+                    image: '/Images/placeholder.png',
                     text: 'Slide 1'
                 },
                 {
-                    image: '~/Content/Images/placeholder.png',
+                    image: '/Images/placeholder.png',
                     text: 'Slide 2'
                 }];
         }
     }
+
 
     export class AboutController {
 
