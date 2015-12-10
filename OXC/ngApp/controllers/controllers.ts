@@ -11,12 +11,12 @@
             this.comics = this.comicService.listComics();
             this.slides = [
                 {
-                    image: '/Images/placeholder.png',
-                    text: 'Slide 1'
+                    image: '/Images/hydro3.png',
+                    text: 'COMING FALL 2016'
                 },
                 {
-                    image: '/Images/placeholder.png',
-                    text: 'Slide 2'
+                    image: '/Images/hydro3.png',
+                    text: 'MORE TEXT'
                 }];
         }
     }
