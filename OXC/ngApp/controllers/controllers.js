@@ -9,12 +9,12 @@ var MyApp;
                 this.comics = this.comicService.listComics();
                 this.slides = [
                     {
-                        image: '/Images/hydro3.png',
+                        image: '/Images/hydroslide1.png',
                         text: 'COMING FALL 2016'
                     },
                     {
-                        image: '/Images/hydro3.png',
-                        text: 'MORE TEXT'
+                        image: '/Images/hydrosol1.png',
+                        text: 'NEW ONGOING SERIES'
                     }];
             }
             return HomeController;
@@ -95,3 +95,4 @@ var MyApp;
         Controllers.DeleteComicController = DeleteComicController;
     })(Controllers = MyApp.Controllers || (MyApp.Controllers = {}));
 })(MyApp || (MyApp = {}));
+//# sourceMappingURL=controllers.js.map

@@ -17,12 +17,13 @@ body {
 .spacer {
     height: 50px;
     background-color: white;
+
 }
 
 .navrow1 {
     font-family: 'Dosis', sans-serif;
     height: 200px;
-    background-color: darkgrey;
+    background-color: rgba(22, 24, 56, 0.36);
     color: white;
     /*Vertical Centering*/
     line-height: 188px;
@@ -122,7 +123,7 @@ body {
 
 .footer {
     font-family: 'Roboto Condensed', sans-serif;
-    color: darkgray;
+    color: white;
     /*Vertical Centering (must match height above)*/
     /*line-height: 200px;*/
     /*Text Size*/
@@ -193,7 +194,6 @@ h4 {
 
 /*Title Particle Styling Lines 194-235*/
 /*Title Particle Code*/
-body{ margin:0; font:normal 75% Arial, Helvetica, sans-serif; }
 canvas{ display: block; vertical-align: bottom; }
 /* ---- particles.js container ---- */
 #particles-js{
