@@ -202,4 +202,7 @@ canvas{ display: block; vertical-align: bottom; }
     background-size: 20%;
     background-position: 50% 50%;
 }
-/* ---- stats.js ---- */
+
+.prevbutton {
+    text-align: center;
+}
