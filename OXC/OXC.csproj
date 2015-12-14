@@ -257,6 +257,10 @@
     <Compile Include="Migrations\201512132133368_updatedmodel.Designer.cs">
       <DependentUpon>201512132133368_updatedmodel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201512141733164_modifiedComics1.cs" />
+    <Compile Include="Migrations\201512141733164_modifiedComics1.Designer.cs">
+      <DependentUpon>201512141733164_modifiedComics1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -401,6 +405,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201512132133368_updatedmodel.resx">
       <DependentUpon>201512132133368_updatedmodel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201512141733164_modifiedComics1.resx">
+      <DependentUpon>201512141733164_modifiedComics1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

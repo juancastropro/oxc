@@ -8,10 +8,13 @@
                 Issue: {{comic.issue}}<br />
                 Writer: {{comic.writer}}<br />
                 Artist: {{comic.artist}}<br />
-                <a href="/edit/{{comic.id}}">Edit</a> |
-                <a href="/delete/{{comic.id}}">Delete</a>
+                Release: {{comic.release | date:'longDate'}}<br />
+                <div ng-show="account.getClaim('CanAddComics')=='true'">
+                    <a href="/edit/{{comic.id}}">Edit</a> |
+                    <a href="/delete/{{comic.id}}">Delete</a><br /><br />
+                </div>
             </div>
-            <a href="/addComic">Add New Comic</a>
+            <a ng-show="account.getClaim('CanAddComics')=='true'" href="/addComic">Add New Comic</a>
         </div>
     </div>
 </div>

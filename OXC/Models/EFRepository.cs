@@ -28,6 +28,7 @@ namespace OXC.Models
                 original.Issue = comicToSave.Issue;
                 original.Writer = comicToSave.Writer;
                 original.Artist = comicToSave.Artist;
+                original.Release = comicToSave.Release;
                 _db.SaveChanges();
             }
         }

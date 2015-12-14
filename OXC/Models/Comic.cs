@@ -12,6 +12,6 @@ namespace OXC.Models
         public int Issue { get; set; }
         public string Writer { get; set; }
         public string Artist { get; set; }
-        //public DateTime Date { get; set; }
+        public DateTime Release { get; set; }
     }
 }
