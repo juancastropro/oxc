@@ -7,41 +7,42 @@ using OXC.Models;
 using System.Net.Mail;
 using System.Net;
 using System.Configuration;
+using SendGrid;
 
 namespace OXC
 {
 
-    //public class EmailService : IIdentityMessageService
-    //{
-    //    public Task SendAsync(IdentityMessage message)
-    //    {
-    //        return configSendGridasync(message);
-    //    }
+    public class EmailService : IIdentityMessageService
+    {
+        public Task SendAsync(IdentityMessage message)
+        {
+            return configSendGridasync(message);
+        }
 
-    //    private Task configSendGridasync(IdentityMessage message)
-    //    {
-    //        var myMessage = new SendGridMessage();
-    //        myMessage.AddTo(message.Destination);
-    //        myMessage.From = new MailAddress("Stephen.Walther@CoderCamps.com", "Account Activation");
-    //        myMessage.Subject = message.Subject;
-    //        myMessage.Text = message.Body;
-    //        myMessage.Html = message.Body;
+        private Task configSendGridasync(IdentityMessage message)
+        {
+            var myMessage = new SendGridMessage();
+            myMessage.AddTo(message.Destination);
+            myMessage.From = new MailAddress("oxc@oxccomics.com", "Account Activation");
+            myMessage.Subject = message.Subject;
+            myMessage.Text = message.Body;
+            myMessage.Html = message.Body;
 
-    //        var credentials = new NetworkCredential(ConfigurationManager.AppSettings["sendGridUserName"], ConfigurationManager.AppSettings["sendGridPassword"]);
+            var credentials = new NetworkCredential("oxc@oxccomics.com", "#z0m61e*");
 
-    //        // Create a Web transport for sending email.
-    //        var transportWeb = new Web(credentials);
+            // Create a Web transport for sending email.
+            var transportWeb = new Web(credentials);
 
-    //        // Send the email.
-    //        if (transportWeb != null) {
-    //            return transportWeb.DeliverAsync(myMessage);
-    //        }
-    //        else {
-    //            return Task.FromResult(0);
-    //        }
-    //    }
-    //}
-
+            // Send the email.
+            if (transportWeb != null)
+            {
+                return transportWeb.DeliverAsync(myMessage);
+            }
+            else {
+                return Task.FromResult(0);
+            }
+        }
+    }
 
     // Configure the application user manager used in this application. UserManager is defined in ASP.NET Identity and is used by the application.
 
@@ -71,7 +72,8 @@ namespace OXC
                 RequireUppercase = true,
             };
 
-            //manager.EmailService = new EmailService();
+            // Registering the EmailService
+            manager.EmailService = new EmailService();
 
             var dataProtectionProvider = options.DataProtectionProvider;
             if (dataProtectionProvider != null)

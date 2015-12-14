@@ -5,6 +5,7 @@
             <font size="6">OXC Presents:</font>
             <div ng-repeat="comic in controller.comics">
                 <font size="5"><i>{{comic.title}}</i></font><br />
+                Issue: {{comic.issue}}<br />
                 Writer: {{comic.writer}}<br />
                 Artist: {{comic.artist}}<br />
                 <a href="/edit/{{comic.id}}">Edit</a> |

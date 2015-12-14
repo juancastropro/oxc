@@ -339,16 +339,17 @@ namespace OXC.Controllers
 
 
             // Uncomment to send an email confirmation
-            //string code = await UserManager.GenerateEmailConfirmationTokenAsync(user.Id);
-            //code = System.Web.HttpUtility.UrlEncode(code);
+            string code = await UserManager.GenerateEmailConfirmationTokenAsync(user.Id);
+            code = System.Web.HttpUtility.UrlEncode(code);
 
-            //var callbackUrl = String.Format("/confirmEmail?userId={0}&code={1}", user.Id, code);
-            //var absoluteCallbackUrl = Request.GetUrlHelper().Content(callbackUrl);
-            //await UserManager.SendEmailAsync(user.Id, "Confirm your account", "Please confirm your account by clicking <a href=\"" + absoluteCallbackUrl + "\">here</a>");
+            var callbackUrl = String.Format("/confirmEmail?userId={0}&code={1}", user.Id, code);
+            var absoluteCallbackUrl = Request.GetUrlHelper().Content(callbackUrl);
+            await UserManager.SendEmailAsync(user.Id, "Confirm your account", "Please confirm your account by clicking <a href=\"" + absoluteCallbackUrl + "\">here</a>");
 
             return Ok();
         }
 
+        // Verify that the confirmation code is valid
         // POST api/Account/ConfirmEmail
         [AllowAnonymous]
         [Route("ConfirmEmail")]

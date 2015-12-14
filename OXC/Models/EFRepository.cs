@@ -25,6 +25,7 @@ namespace OXC.Models
             {
                 var original = this.Find(comicToSave.Id);
                 original.Title = comicToSave.Title;
+                original.Issue = comicToSave.Issue;
                 original.Writer = comicToSave.Writer;
                 original.Artist = comicToSave.Artist;
                 _db.SaveChanges();
