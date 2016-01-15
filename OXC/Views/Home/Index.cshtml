@@ -23,13 +23,31 @@
 
     <div class="container">
         <div class="navrow2">
-            <div class="col-md-3 navicreators"><a href="/creators">CREATORS</a></div>
-            <div class="col-md-3 navicomics"><a href="/comics">COMICS</a></div>
-            <div class="col-md-3 naviregister"><a href="/register">REGISTER</a></div>
-            <div class="col-md-3 navilogin">
-                <a href="/login" ng-show="!account.isLoggedIn()">LOGIN</a>
-                <a href="#" ng-click="account.logout()" ng-show="account.isLoggedIn()">LOGOUT</a>
-            </div>
+            <a href="/creators">
+                <div class="col-md-3 navibar">
+                    CREATORS
+                </div>
+            </a>
+            <a href="/comics">
+                <div class="col-md-3 navibar">
+                    COMICS
+                </div>
+            </a>
+            <a href="/register">
+                <div class="col-md-3 navibar">
+                    REGISTER
+                </div>
+            </a>
+            <a href="/login" ng-show="!account.isLoggedIn()">
+                <div class="col-md-3 navibar">
+                    LOGIN
+                </div>
+            </a>
+            <a href="#" ng-click="account.logout()" ng-show="account.isLoggedIn()">
+                <div class="col-md-3 navibar">
+                    LOGOUT
+                </div>
+            </a>
         </div>
     </div>
 
@@ -37,18 +55,25 @@
 
     @*Social*@
     <br />
-    <br />
 
     <div class="container">
         <div class="row">
             <div class="col-md-12 bodysocial">SOCIAL</div>
         </div><br /><br />
+    </div>
+
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-md-4 logo"><img src="~/Images/OXC Logo2.png" alt="logo" style="width:300px;height:167px;" /></div>
-            <div class="col-md-2 footer">FACEBOOK<a href="http://www.facebook.com/oxccomics"><img src="~/Images/facebook.png" alt="facebook" style="width:100px;height:100px;" /></a></div>
-            <div class="col-md-2 footer">INSTAGRAM<a href="http://www.instagram.com/oxccomics"><img src="~/Images/instagram.png" alt="instagram" style="width:100px;height:100px;" /></a></div>
-            <div class="col-md-2 footer">TUMBLR<a href="http://www.oxccomics.tumblr.com/"><img src="~/Images/tumblr.png" alt="tumblr" style="width:100px;height:100px;" /></a></div>
-            <div class="col-md-2 footer">TWITTER<a href="http://www.twitter.com/oxccomics"><img src="~/Images/twitter.png" alt="twitter" style="width:100px;height:100px;" /></a></div>
+            <div class="col-md-2"></div>
+            <div class="col-md-3 logo"><a href="/"><img src="~/Images/OXC Logo2.png" alt="logo" style="width:300px;height:167px;" /></a></div>
+            <div class="col-md-5">
+                <div class="col-md-3 footer">FACEBOOK<br /><a href="http://www.facebook.com/oxccomics"><img src="~/Images/facebook.png" alt="facebook" style="width:100px;height:100px;" /></a></div>
+                <div class="col-md-3 footer">INSTAGRAM<br /><a href="http://www.instagram.com/oxccomics"><img src="~/Images/instagram.png" alt="instagram" style="width:100px;height:100px;" /></a></div>
+                <div class="col-md-3 footer">TUMBLR<br /><a href="http://www.oxccomics.tumblr.com/"><img src="~/Images/tumblr.png" alt="tumblr" style="width:100px;height:100px;" /></a></div>
+                <div class="col-md-3 footer">TWITTER<br /><a href="http://www.twitter.com/oxccomics"><img src="~/Images/twitter.png" alt="twitter" style="width:100px;height:100px;" /></a></div>
+            </div>
+            <div class="col-md-1 toparrow"><div onclick="$('body').animate({ scrollTop: 0 }, '500');"><img src="~/Images/uparrowwhite.png" style="max-height:20px; width:auto" /></div></div>
+            <div class="col-md-1"></div>
         </div>
     </div>
 

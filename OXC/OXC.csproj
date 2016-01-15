@@ -285,6 +285,20 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="GitIgnore\.gitignore" />
     <Content Include="Global.asax" />
+    <Content Include="Images\Comic-Book-Page-Template-No-Guides.jpg" />
+    <Content Include="Images\facebook.png" />
+    <Content Include="Images\hydro3.png" />
+    <Content Include="Images\hydrocovertemplate.jpg" />
+    <Content Include="Images\hydroslide1.png" />
+    <Content Include="Images\hydroslide2.png" />
+    <Content Include="Images\hydrosol1.png" />
+    <Content Include="Images\instagram.png" />
+    <Content Include="Images\OXC Logo2.png" />
+    <Content Include="Images\OXC Logo3.png" />
+    <Content Include="Images\placeholder.png" />
+    <Content Include="Images\tumblr.png" />
+    <Content Include="Images\twitter.png" />
+    <Content Include="Images\uparrowwhite.png" />
     <Content Include="ngApp\views\about.html" />
     <Content Include="ngApp\views\addComic.html" />
     <Content Include="ngApp\views\comics.html" />
@@ -375,7 +389,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Images\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

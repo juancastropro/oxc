@@ -23,9 +23,7 @@ body {
     height: 200px;
     background-color: rgba(22, 24, 56, 0.36);
     color: white;
-    /*Vertical Centering*/
     line-height: 188px;
-    /*Horizontral Centering*/
     text-align: center;
     /*Blocks*/
     position: relative;
@@ -54,37 +52,56 @@ body {
     font-size: 30px;
 }
 
-/*.navicreators {
-    background-image: url('Images/bg.jpg');
-}*/
-
-.navicreators a {
+.navibar {
     color: white;
 }
 
-/*.navicomics {
-    background-image: url('Images/bg.jpg');
-}*/
+    .navibar:hover {
+        background-color: rgba(22, 24, 56, 0.36);
+        opacity: 0.75;
+    }
 
-.navicomics a {
-    color: white;
+.navbar2 {
+    line-height: 70px;
+    font-size: 20px;
+    text-align: center;
 }
 
-/*.naviregister {
-    background-image: url('Images/bg.jpg');
-}*/
-
-.naviregister a {
-    color: white;
+/*Comics Dropdown CSS*/
+/*.dropbtn {
+    border: none;
+    width: 285px;
 }
 
-/*.navilogin {
-    background-image: url('Images/bg.jpg');
-}*/
-
-.navilogin a {
-    color: white;
+.dropdown {
+    position: relative;
+    display: inline-block;
 }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 285px;
+    z-index: 1;
+    background-color: white;
+    min-width: 285px;
+}
+
+    .dropdown-content a {
+        color: black;
+        padding: 1px 1px 1px 1px;
+        text-decoration: none;
+        display: block;
+    }
+
+        .dropdown-content a:hover {
+            background-color: rgba(22, 24, 56, 0.36);
+            opacity: 0.75;
+        }
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}*/
 
 .bodypreview {
     font-family: 'Roboto Condensed', sans-serif;
@@ -209,4 +226,13 @@ canvas {
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 20px;
     text-align: center;
+}
+
+.comicsborder {
+    border-bottom: 1px solid #b7b7b7;
+}
+
+.toparrow {
+    cursor: pointer;
+    text-align: right;
 }
