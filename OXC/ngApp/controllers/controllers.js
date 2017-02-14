@@ -10,11 +10,11 @@ var MyApp;
                 this.slides = [
                     {
                         image: '/Images/hydroslide1.png',
-                        text: 'COMING FALL 2016'
+                        text: ''
                     },
                     {
                         image: '/Images/hydrosol1.png',
-                        text: 'NEW ONGOING SERIES'
+                        text: ''
                     }];
             }
             return HomeController;
@@ -95,4 +95,3 @@ var MyApp;
         Controllers.DeleteComicController = DeleteComicController;
     })(Controllers = MyApp.Controllers || (MyApp.Controllers = {}));
 })(MyApp || (MyApp = {}));
-//# sourceMappingURL=controllers.js.map
