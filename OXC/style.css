@@ -35,6 +35,85 @@ body {
     background-position: center;*/
 }
 
+@media only screen and (max-width: 320px) {
+    .navrow1 {
+        font-size: 60px;
+        line-height: 60px;
+    }
+
+    .navrow2 {
+        height: 200px !important;
+    }
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+    .navrow1 {
+        font-size: 80px;
+        line-height: 80px;
+    }
+
+    .navrow2 {
+        height: 200px !important;
+    }
+
+    .footer {
+        font-size: 10px !important;
+    }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+    .navrow1 {
+        font-size: 100px;
+        line-height: 100px;
+    }
+
+    .navrow2 {
+        height: 200px !important;
+    }
+
+    .footer {
+        font-size: 10px !important;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    .navrow1 {
+        font-size: 133px;
+        line-height: 100px;
+    }
+
+    .navrow2 {
+        height: 200px !important;
+    }
+
+    .footer {
+        font-size: 20px !important;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    .navrow1 {
+        font-size: 150px;
+        line-height: 150px;
+    }
+
+    .navrow2 {
+        height: 50px !important;
+    }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+    .navrow1 {
+        font-size: 200px;
+        line-height: 188px;
+    }
+}
+
 .navititle a {
     color: white;
 }

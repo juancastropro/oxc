@@ -12,16 +12,28 @@
                 </ul>
 
                 <form ng-submit="controller.login()">
-                    <div>
-                        <label>Email:</label>
-                        <input ng-model="controller.loginUser.userName" />
+                    <div class="row form-group">
+                        <label class="col-md-2 col-md-offset-3 control-label">Email:</label>
+                        <div class="col-md-4">
+                            <input ng-model="controller.loginUser.userName" class="form-control" />
+                        </div>
                     </div>
-                    <div>
-                        <label>Password:</label>
-                        <input ng-model="controller.loginUser.password" input type="password" />
+                    <div class="row form-group">
+                        <label class="col-md-2 col-md-offset-3 control-label">Password:</label>
+                        <div class="col-md-4">
+                            <input ng-model="controller.loginUser.password" input type="password" class="form-control" />
+                        </div>
                     </div>
-                    <input type="submit" value="Login" />
-                    <a href="/register">Register</a>
+                    <div class="row form-group">
+                        <div class="col-md-4 col-md-offset-5">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <input type="submit" value="Login" class="btn btn-default" style="border-radius: 0" />
+                                    <a href="/register" class="btn btn-primary" style="border-radius: 0">Register</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </form>
             </fieldset>
         </div>
