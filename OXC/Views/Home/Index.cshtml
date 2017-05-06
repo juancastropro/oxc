@@ -5,7 +5,7 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-    <link rel="shortcut icon" type="image/x-icon" href="@Url.Content("~/Images/oxcfavicon.png")" />
+    <link rel="shortcut icon" type="image/x-icon" href="@Url.Content("~/favicon.ico")" />
 </head>
 <body ng-controller="AccountController as account">
 
@@ -14,15 +14,17 @@
         <a href="/">
             <div class="navrow1">
                 <div id="particles-js">
-                    <div class="col-md-12 navititle">
-                        OXC COMICS
-                    </div>
+                    <CENTER>
+                        <a href="/">
+                            <img src="~/Images/headerimagefont2.png" alt="logo" style="width: 100%; height: auto;" />
+                        </a>
+                    </CENTER>
                 </div>
             </div>
         </a>
     </div>
 
-    <div class="container">
+    @*@<div class="container">
         <div class="navrow2">
             <a href="/creators">
                 <div class="col-md-3 navibar">
@@ -50,28 +52,41 @@
                 </div>
             </a>
         </div>
-    </div>
+    </div>*@
 
     <ng-view></ng-view>
 
     @*Social*@
     <br />
+    <br />
+    <br />
+    <br />
+    <br />
 
-    <div class="container">
+    @*<div class="container">
         <div class="row">
             <div class="col-md-12 bodysocial">SOCIAL</div>
         </div><br /><br />
-    </div>
+    </div>*@
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-2"></div>
-            <div class="col-md-3 logo">
-                <a href="/">
-                    <img src="~/Images/OXC Logo2.png" alt="logo" style="width: 100%; max-width: 300px; height: auto;" />
-                </a>
+            <div class="col-md-5">
+            </div>
+            <div class="col-md-2">
+                <CENTER>
+                    <a href="/">
+                        <img src="~/Images/OXC Logo.png" alt="logo" style="width: 100%; height: auto;" />
+                    </a>
+                </CENTER>
             </div>
             <div class="col-md-5">
+            </div>
+        </div>
+        <br /><br /><br />
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
                 <div class="col-xs-3 footer">
                     FACEBOOK
                     <br />
@@ -101,8 +116,19 @@
                     </a>
                 </div>
             </div>
-            <div class="col-md-1 toparrow"><div onclick="$('body').animate({ scrollTop: 0 }, '500');"><img src="~/Images/uparrowwhite.png" style="max-height:20px; width:auto" /></div></div>
             <div class="col-md-1"></div>
+            <div class="col-md-1 toparrow"><div onclick="$('body').animate({ scrollTop: 0 }, '500');"><img src="~/Images/uparrowwhite.png" style="max-height:20px; width:auto" /></div></div>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <div class="row">
+            <div class="col-md-12 midpicdes">
+                <center>J. F. Castro  & Julie Gomez</center>
+                <br /><center>OXC COMICS 2017</center>
+            </div>
         </div>
     </div>
 

@@ -1,13 +1,16 @@
 ﻿@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
-@import url(https://fonts.googleapis.com/css?family=Cabin Condensed);
-@import url(https://fonts.googleapis.com/css?family=Cabin+Condensed);
+@import url(https://fonts.googleapis.com/css?family=Open Sans);
+@import url('https://fonts.googleapis.com/css?family=Lato:100');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
+@import url('https://fonts.googleapis.com/css?family=Geo');
+@import url('https://fonts.googleapis.com/css?family=Raleway:800');
 
 /*div {
     border: 1px solid black;
 }*/
 
 body {
-    background-image: url(http://theartmad.com/wp-content/uploads/Grey-Background-5.jpg);
+    background-color: 00a651;
     background-position: center;
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -19,9 +22,8 @@ body {
 }
 
 .navrow1 {
-    font-family: 'Cabin Condensed', sans-serif;
     height: 200px;
-    background-color: rgba(22, 24, 56, 0.36);
+    /*background-color: rgba(22, 24, 56, 0.36);*/
     color: white;
     line-height: 188px;
     text-align: center;
@@ -114,12 +116,16 @@ body {
     }
 }
 
-.navititle a {
-    color: white;
+.navititle {
+    font-size: 50px;
+    font-family: 'Raleway', sans-serif;
+    color: black;
+
+
 }
 
 .navrow2 {
-    font-family: 'Cabin Condensed', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     height: 50px;
     background-color: darkslategray;
     color: white;
@@ -183,10 +189,9 @@ body {
 }*/
 
 .bodypreview {
-    font-family: 'Cabin Condensed', sans-serif;
-    height: 50px;
-    background-color: black;
-    color: white;
+    font-family: 'Geo', sans-serif;
+    height: 500px;
+    color: black;
     /*Vertical Centering (must match height above)*/
     line-height: 50px;
     /*Blocks*/
@@ -197,7 +202,7 @@ body {
 }
 
 .bodysocial {
-    font-family: 'Cabin Condensed', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     height: 50px;
     background-color: white;
     color: darkgray;
@@ -216,8 +221,8 @@ body {
 }
 
 .footer {
-    font-family: 'Cabin Condensed', sans-serif;
-    color: white;
+    font-family: 'Geo', sans-serif;
+    color: black;
     /*Vertical Centering (must match height above)*/
     /*line-height: 200px;*/
     /*Text Size*/
@@ -226,58 +231,59 @@ body {
 }
 
 h4 {
-    font-family: 'Cabin Condensed', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 20px;
 }
 
 .creatorspic {
-    font-family: 'Cabin Condensed', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 20px;
 }
 
 .creatorsbio {
-    font-family: 'Cabin Condensed', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 20px;
 }
 
 .comicsbody {
-    font-family: 'Cabin Condensed', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 20px;
 }
 
 .addcomicbody {
-    font-family: 'Cabin Condensed', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 20px;
 }
 
 .editcomicbody {
-    font-family: 'Cabin Condensed', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 20px;
 }
 
 .deletecomicbody {
-    font-family: 'Cabin Condensed', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 20px;
 }
 
 .newsbody {
-    font-family: 'Cabin Condensed', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 20px;
 }
 
 .registerbody {
-    font-family: 'Cabin Condensed', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 20px;
 }
 
 .loginbody {
-    font-family: 'Cabin Condensed', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 20px;
 }
 
 .midpicdes {
-    font-family: 'Cabin Condensed', sans-serif;
+    font-family: 'Geo', sans-serif;
     font-size: 20px;
+    color: black;
 }
 
 .slideshow {
@@ -302,7 +308,7 @@ canvas {
 }
 
 .prevbutton {
-    font-family: 'Cabin Condensed', sans-serif;
+    font-family: 'Geo', sans-serif;
     font-size: 20px;
     text-align: center;
 }

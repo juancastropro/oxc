@@ -285,8 +285,11 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="GitIgnore\.gitignore" />
     <Content Include="Global.asax" />
-    <Content Include="Images\Comic-Book-Page-Template-No-Guides.jpg" />
+    <Content Include="Images\CoverImageComingSoon.png" />
+    <Content Include="Images\covers.jpg" />
     <Content Include="Images\facebook.png" />
+    <Content Include="Images\headerimagefont.png" />
+    <Content Include="Images\headerimagefont2.png" />
     <Content Include="Images\hydro3.png" />
     <Content Include="Images\hydrocovertemplate.jpg" />
     <Content Include="Images\hydroslide1.png" />
@@ -297,6 +300,7 @@
     <Content Include="Images\ISSUE1PG1.jpg" />
     <Content Include="Images\ISSUE1PG10.jpg" />
     <Content Include="Images\ISSUE1PG8.jpg" />
+    <Content Include="Images\OXC Logo.png" />
     <Content Include="Images\OXC Logo2.png" />
     <Content Include="Images\OXC Logo3.png" />
     <Content Include="Images\oxcfavicon.png" />
